@@ -1,0 +1,25 @@
+extends ../_template
+
+block variables
+  - var title = 'Сайт на техобслуговуваннi | Приватний нотаріус Гордієнко О.В.'
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.hero
+    .container
+      .hero-banner
+        h2.site-closed__title Сторінка в розробцi
+        h2.site-closed__subtitle спробуйте скористатися меню, або зателефонуйте до нотаріуса
+
+
+      .hero__phone
+        a.hero__phone-link(href="tel:+380962374233") 
+          span тел. 
+          =" " 
+          |096-237-42-33
+    include ../sections/footer
+  //end   content
+
+  include ../sections/scripts
