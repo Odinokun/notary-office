@@ -113,34 +113,34 @@
   margin: -40px 0 -30px 0;
   padding: 0;
   background-image: url('../img/bg-green.jpg');
-//
-//  @include max(1023) {
-//    margin: 0;
-//    margin: -3px 0 0 0;
-//  }
-//  @include max(750) {
-//    overflow: hidden;
-//    flex-direction: column;
-//    justify-content: flex-start;
-//    height: 0;
-//    padding-top: 0;
-//    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
-//    transition-duration: .7s;
-//    transition-property: height;
-//  }
+
+  @include max(1023) {
+    margin: 0;
+    margin: -3px 0 0 0;
+  }
+  @include max(750) {
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 0;
+    padding-top: 0;
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    transition-duration: .7s;
+    transition-property: height;
+  }
 }
 .menu__item {
   margin-bottom: -30px;
   list-style: none;
-//
-//  @include max(1023) {
-//    line-height: 60px;
-//  }
-//  @include max(750) {
-//    margin-bottom: -20px;
-//    transition: .3s;
-//    opacity: 0;
-//  }
+
+  @include max(1023) {
+    line-height: 60px;
+  }
+  @include max(750) {
+    margin-bottom: -20px;
+    transition: .3s;
+    opacity: 0;
+  }
 }
 .menu__link {
   font-family: $font-title;
@@ -164,26 +164,25 @@
   }
 }
 .menu__item--main {
-//  // .menu__item--logo {
   position: relative;
   margin: 0 -20px -45px -20px;
   padding: 40px;
   text-indent: -9999px;
   border-radius: 50%;
   background-image: url('../img/bg-green.jpg');
-//
-//  @include max(1023) {
-//    display: none;
-//  }
-//  @include max(750) {
-//    display: block;
-//    margin: 0 0 -10px 0;
-//    padding: 0;
-//    text-indent: 0;
-//    background-image: none;
-//
-//    order: -1;
-//  }
+
+  @include max(1023) {
+    display: none;
+  }
+  @include max(750) {
+    display: block;
+    margin: 0 0 -10px 0;
+    padding: 0;
+    text-indent: 0;
+    background-image: none;
+
+    order: -1;
+  }
   &::before {
     position: absolute;
     z-index: -11;
@@ -200,17 +199,8 @@
     }
   }
 }
-//// .menu__link--logo {
-////   position: absolute;
-////   z-index: 10;
-////   top: 0;
-////   right: 0;
-////   bottom: 0;
-////   left: 0;
-////   border-radius: 50%;
-//// }
+
 .menu__link--main {
-//  // .menu__logo {
   display: block;
   width: 80px;
   height: 80px;

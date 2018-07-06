@@ -14,25 +14,19 @@ block content
         .top-header__left
           h2.top-header__title Контакти
         .top-header__right
-          p.top-header__text Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу участие в формировании форм развития. Равным образом укрепление и развитие структуры в значительной степени обуславливает создание позиций. Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу участие в формировании форм развития.
+          p.top-header__text На цій сторінці ві маєте можливість дізнатися адресу нотаріуса, її телефон, e-mail та розклад роботи.
+          p.top-header__text Також є можливість зв'язатися з нотаріусом, або заздалегідь назначити зустріч за допомогою форми зворотнього зв'зку.
+          //p.top-header__text Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу участие в формировании форм развития. Равным образом укрепление и развитие структуры в значительной степени обуславливает создание позиций. Таким образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу участие в формировании форм развития.
 
       section.contacts__body
         .contacts__left
           .contacts__connect-wrap
             header.contacts__header
-              h2.contacts__title Контакти для связи
-            span.contacts__connect
-              svg
-                use(xlink:href="assets/img/sprite.svg#mobile")
-              a(href="tel:+38 096 237 42 33") 096-237-42-33
+              h2.contacts__title Контакти для зв'язку
             span.contacts__connect
               svg
                 use(xlink:href="assets/img/sprite.svg#phone")
-              a(href="tel:044 220 42 21") 044-220-42-21
-            span.contacts__connect
-              svg
-                use(xlink:href="assets/img/sprite.svg#fax")
-              a(href="tel:044 220 42 21") 044-220-42-21
+              a(href="tel:+380962374233") 096-237-42-33
             span.contacts__connect
               svg
                 use(xlink:href="assets/img/sprite.svg#mail")
@@ -40,7 +34,11 @@ block content
             span.contacts__connect
               svg
                 use(xlink:href="assets/img/sprite.svg#adress")
-              a(href="https://goo.gl/maps/YwykDz1M9hS2" target="_blank" rel="nofollow noopener noreferrer") м.Киев, Дарницький б-р, 8-В, оф.182
+              a(href="https://goo.gl/maps/YwykDz1M9hS2" target="_blank" rel="nofollow noopener noreferrer")
+                |м.Київ, Дарницький б-р, 8-В, оф.182
+                br
+                |(код домофону 182)
+
 
 
           .contacts__schedule-wrap
@@ -48,28 +46,28 @@ block content
               h2.contacts__title Pозклад роботи
 
             .contacts__schedule
-              span пн-пт: 09:00 - 18:00
+              span пн-пт: 10:00 - 18:00
               br
               span сб-нд: за попередньою домовленістю
 
             span.contacts__ahtung Увага!
-            p Бажано заздалегидь зателефонувати до нотарыуса, та домовитися про зустрич, для уникнення накладок з иншими клиентами и для сокращение времени Вашего ожидания (эта фраза требует корректировки).
+            p Бажано заздалегідь зателефонувати до нотаріуса, та домовитись про зустріч, для зменшення часу Вашого очікування через те, що нотаріус буде працювати з іншими клієнтами які прийли за попереднім записом.
 
 
 
         .contacts__right
           .contacts__form-wrap
             header.contacts__header
-              h2.contacts__title Надийшлить повидомлення для нотариуса
+              h2.contacts__title Надийшлить повідомлення для нотаріуса
 
-            span.contacts__form-title Свои вопросы нотариусу Вы также можете задавать заполнив форму.
+            span.contacts__form-title Також Ви маєте можливість задавати свої запитання до нотаріуса за допомогою форми зворотнього зв'язку.
 
             form.contacts__form
               input(type="text" placeholder="Ваше призвище та имя*" required)
               input(type="text" placeholder="Ваш телефон*" required).phone-mask
               input(type="mail" placeholder="Ваш email")
               textarea(rows="5" placeholder="Ваше питання до нотариуса...*" required)
-              span.contacts__form-note * отмеченые поля обязательные для заполнения.
+              span.contacts__form-note * поля які обов'язкові для заповнення.
               button.btn Відправити
 
         .contacts__map#contacts__map
@@ -194,8 +192,8 @@ block content
       var marker = new google.maps.Marker({
         // Определяем позицию маркера
         position: {
-          lat: 50.465009,
-          lng: 30.609100
+          lat: 50.465170,
+          lng: 30.608960
         },
         map: map,
         title: 'Приватний нотариус Гордієнко Ольга Валеріївна',
