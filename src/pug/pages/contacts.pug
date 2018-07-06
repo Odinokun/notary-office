@@ -64,11 +64,11 @@ block content
 
             span.contacts__form-title Також Ви маєте можливість задавати свої запитання до нотаріуса за допомогою форми зворотнього зв'язку.
 
-            form.contacts__form
-              input(type="text" placeholder="Ваше прізвище та ім'я*" required)
-              input(type="text" placeholder="Ваш телефон*" required).phone-mask
-              input(type="mail" placeholder="Ваш email")
-              textarea(rows="5" placeholder="Ваше запитання до нотаріуса...*" required)
+            form.contacts__form#contacts__form
+              input(name='name' placeholder="Ваше прізвище та ім'я*" required)
+              input(name='phone' placeholder="Ваш телефон*" required).phone-mask
+              input(name='email' type="mail" placeholder="Ваш email")
+              textarea(name='message' rows="5" placeholder="Ваше запитання до нотаріуса...*" required)
               span.contacts__form-note * поля які обов'язкові для заповнення.
               button.btn Відправити
 

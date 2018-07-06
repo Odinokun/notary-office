@@ -1,24 +1,12 @@
 $(function() {
 
-  // begin preloader
-  require('./modules/preloader')();
-  // end   preloader
-  
   // begin require SVG for IE
   require('./modules/svg4everybody')();
   // end   require SVG for IE
 
-  // begin Chrome Smooth Scroll
-  require('./modules/smoothScroll')();
-  // end   Chrome Smooth Scroll
-
-  // begin Chrome Scroll2Ancor
-  // require('./modules/scroll2ancor')();
-  // end   Chrome Scroll2Ancor
-  
-  // begin Slick slider
-  // require('./modules/slick')();
-  // end   Slick slider
+  // begin preloader
+  require('./modules/preloader')();
+  // end   preloader
 
   // begin Popup
   // require('./modules/popup')();
@@ -37,6 +25,10 @@ $(function() {
   // require('./modules/fancybox')();
   // end   Fancybox3
 
+  // begin slick
+  // require('./modules/slick')();
+  // end   slick
+
   // begin mobile menu
   require('./modules/mobileMenu')();
   // end   mobile menu
@@ -53,7 +45,8 @@ $(function() {
   require('./modules/maskedinput')();
   // end   маска телефона в inputs
 
-  // begin стилизация карты в контактах
-  // require('./modules/map')();
-  // end   стилизация карты в контактах
+  // begin отправка формы на странице контактов
+  require('./modules/sendForm')();
+  // end отправка формы на странице контактов
+
 });
