@@ -1,0 +1,22 @@
+.blog {
+  background-color: #b1ae7b;
+  background-image: url('../img/bg-olive.jpg');
+  &::before {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    content: '';
+    pointer-events: none;
+    border: 2px dashed #77743c;
+  }
+}
+.blog__body {
+  display: flex;
+
+  @include max(1023) {
+    flex-direction: column-reverse;
+  }
+}
