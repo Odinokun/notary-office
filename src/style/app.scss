@@ -1,0 +1,31 @@
+// core
+@import 'core/fonts';
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/base';
+
+//elements
+// @import 'elements/breadcrumbs';
+@import 'elements/burger';
+// @import 'elements/pagination';
+// @import 'elements/popup';
+@import 'elements/slickBase';
+@import 'elements/stickyHeader';
+@import 'elements/topHeader';
+
+//section
+@import 'sections/footer';
+@import 'sections/header';
+@import 'sections/blogArticle';
+@import 'sections/blogAside';
+
+//pages
+@import 'pages/index';
+@import 'pages/inner';
+@import 'pages/services';
+@import 'pages/servis';
+@import 'pages/blog';
+@import 'pages/links';
+@import 'pages/contacts';
+@import 'pages/article';
+@import 'pages/about';
