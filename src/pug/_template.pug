@@ -6,9 +6,8 @@ html(lang="ru")
     meta(charset="utf-8")
     title #{title}
 
-    meta(name="description" content="odinokun`s start template")
-    meta(name="keywords"    content="odinokun`s start template")
-    meta(name="author"      content="odinokun.com")
+    meta(name="description" content="Сайт приватного нотаріуса Гордієнко О.В.")
+    meta(name="author"      content="http://odinokun.com/")
 
     // begin responsive
     meta(name="viewport"              content="width=device-width, initial-scale=1")
@@ -16,8 +15,8 @@ html(lang="ru")
     // end responsive
 
     // begin social content&image
-    meta(property='og:title'  content='odinokun`s start template')
-    meta(property='og:url'    content='http://odinokun.com/')
+    meta(property='og:title'  content='Приватний нотаріус Гордієнко О.В.')
+    meta(property='og:url'    content='http://notary-office.kiev.ua/')
     meta(property="og:image"  content="assets/img/social.jpg")
     // end social content&image
 
@@ -38,6 +37,14 @@ html(lang="ru")
     style.
       .preloader{z-index:100;position:fixed;width:100%;height:100%;background-color:#81b3b2;display:flex;justify-content:center;align-items:center}.spin{width:150px;height:150px;border:3px solid transparent;border-radius:50%;border-top-color:#F6EDD8;position:absolute;animation:spin 1.5s infinite linear}.spin:before{top:3px;left:3px;right:3px;bottom:3px;border:3px solid transparent;border-top-color:#F6EDD8;animation:antispin .7s infinite linear;content:"";position:absolute;border-radius:60%}@keyframes spin{100%{transform:rotate(360deg)}}@keyframes antispin{from{transform:rotate}to{transform:rotate(-360deg)}}.preloader svg{width:90px;height:90px;position:relative;fill:#F6EDD8}
     // end preloader style
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-105408246-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-105408246-1');
 
 
   body
