@@ -22,11 +22,11 @@ $(function() {
   // end   Animate.css
 
   // begin Fancybox3
-  // require('./modules/fancybox')();
+  require('./modules/fancybox')();
   // end   Fancybox3
 
   // begin slick
-  // require('./modules/slick')();
+  require('./modules/slick')();
   // end   slick
 
   // begin mobile menu

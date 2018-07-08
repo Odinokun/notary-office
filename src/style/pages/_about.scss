@@ -22,7 +22,7 @@
 }
 .about__pic {
   float: left;
-  width: 40%;
+  width: 25%;
   margin: 0 25px 10px 0;
   padding: 5px;
   background-color: $light;
@@ -31,12 +31,16 @@
   23px 0 20px -23px rgba(0, 0, 0, .6),
   inset 0 0 40px rgba(0, 0, 0, .1);
 
-  @include max(640) {
+  @include max(768) {
+    width: 40%;
+  }
+  @include max(500) {
     float: none;
     width: 100%;
-    max-width: 455px;
+    max-width: 200px;
     margin: 0 auto  20px;
   }
+
   img {
     display: block;
     width: 100%;
@@ -48,11 +52,6 @@
   margin-bottom: 20px;
   padding-bottom: 10px;
 
-  @include max(640) {
-    overflow: visible;
-
-    order: -1;
-  }
   &::before {
     position: absolute;
     bottom: 0;
@@ -85,50 +84,26 @@
     text-align: center;
   }
 }
+.about__body {
+  @include clearfix;
+}
 .about__gallery {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-right: -2%;
-
-  @include max(1023) {
-    margin-right: -3%;
-  }
-  @include max(750) {
-    justify-content: space-between;
-    margin-right: 0;
-  }
+  width: calc(100% - 40px);
+  margin: 50px auto 20px;
 }
 .about__gallery-item {
-  width: 23%;
-  margin-right: 2%;
-  margin-bottom: 20px;
+  margin: 0 10px;
   padding: 5px;
-  background-color: $light;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
-  -23px 0 20px -23px rgba(0, 0, 0, .6),
-  23px 0 20px -23px rgba(0, 0, 0, .6),
-  inset 0 0 40px rgba(0, 0, 0, .1);
-
-  @include max(1023) {
-    width: 31%;
-  }
-  @include max(750) {
-    width: 48%;
-    margin-right: 0;
-  }
-  @include max(500) {
-    padding: 2px;
-  }
-  img {
-    display: block;
-    width: 100%;
-  }
 }
 .about__gallery-item-wrap {
   outline: none;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
   a {
+    display: flex;
+    align-items: center;
+    height: 170px;
     outline: none;
   }
 }
