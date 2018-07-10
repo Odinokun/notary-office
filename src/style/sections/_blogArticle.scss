@@ -1,12 +1,12 @@
-.blog__list {
-  width: 75%;
-  padding-right: 50px;
+//.blog__list {
+  //width: 75%;
+  //padding-right: 50px;
 
-  @include max(1023) {
-    width: 100%;
-    padding-right: 0;
-  }
-}
+  //@include max(1023) {
+  //  width: 100%;
+  //  padding-right: 0;
+  //}
+//}
 .blog__article {
   position: relative;
   overflow: hidden;
@@ -134,6 +134,7 @@
   }
 }
 .blog__article-text {
+  text-align: justify;
   p {
     font-size: 16px;
     line-height: 1.35;
