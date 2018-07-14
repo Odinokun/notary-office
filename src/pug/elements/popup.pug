@@ -1,10 +1,9 @@
 //begin popup
-button.popup-open popup open
 .popup__layer
   .popup
-    h3.popup__title Popup title
-    form.popup__form
-      input.popup__input(type="text" placeholder="Ваше имя")
-      input.popup__input(type="text" placeholder="Ваше имя")
-      button.popup__btn Кнопуля
+    .popup__close
+      svg
+        use(xlink:href="assets/img/sprite.svg#close")
+    h3.popup__title Ваше повідомлення відправлено
+    h4.popup__subtitle Ми зв'яжемось з Вами у найближчий час
 //end   popup

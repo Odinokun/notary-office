@@ -9,7 +9,7 @@ $(function() {
   // end   preloader
 
   // begin Popup
-  // require('./modules/popup')();
+  require('./modules/popup')();
   // end   Popup
 
   // begin Sticky header
