@@ -88,6 +88,8 @@ block content
       map = new google.maps.Map(document.getElementById('contacts__map'), {
         center: {lat: 50.4649, lng: 30.6094},
         zoom: 18,
+        maxZoom: 19,
+        minZoom: 10,
         // theme name - Discreet
         styles: [{
           "featureType": "administrative",
@@ -196,7 +198,7 @@ block content
         // Определяем позицию маркера
         position: {
           lat: 50.465170,
-          lng: 30.608960
+          lng: 30.609115
         },
         map: map,
         title: 'Приватний нотариус Гордієнко Ольга Валеріївна',
