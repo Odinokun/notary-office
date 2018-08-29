@@ -87,6 +87,10 @@
 .about__body {
   @include clearfix;
 }
+.about__body-title {
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
 .about__gallery {
   width: calc(100% - 40px);
   margin: 50px auto 20px;

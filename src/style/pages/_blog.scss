@@ -12,11 +12,25 @@
     pointer-events: none;
     border: 2px dashed #77743c;
   }
+
+  .top-header__right {
+    @include max(1023) {
+      display: none;
+    }
+  }
 }
+
 .blog__body {
   display: flex;
 
   @include max(1023) {
     flex-direction: column-reverse;
   }
+}
+
+.blog__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
 }
