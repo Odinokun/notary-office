@@ -9,7 +9,8 @@ module.exports = function() {
       data: $(this).serialize()
     }).done(function () {
       $('#contacts__form')[0].reset();
-      $('.popup__layer').fadeIn();
+      $('.popup-layer, .popup-wrap').fadeIn();
+      $('body').addClass('no-scroll');
     });
     return false;
   });

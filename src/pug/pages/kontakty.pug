@@ -70,7 +70,7 @@ block content
             form.contacts__form#contacts__form
               input(name='name' placeholder="Ваше прізвище та ім'я*" required)
               input(name='phone' placeholder="Ваш телефон*" required).phone-mask
-              input(name='email' type="mail" placeholder="Ваш email")
+              input(name='email' type="email" placeholder="Ваш email")
               textarea(name='message' rows="5" placeholder="Ваше запитання до нотаріуса...*" required)
               span.contacts__form-note * поля які обов'язкові для заповнення.
               button.btn Відправити
@@ -79,7 +79,7 @@ block content
 
 
     include ../sections/footer
-    include ../elements/popup
+    include ../elements/popup-contacts
   //end   content
   include ../sections/scripts
   script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdGbaaf94NCuCkoH98Ry12HA59U0eTqIA&callback=initMap" async defer)

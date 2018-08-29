@@ -1,0 +1,44 @@
+extends ../_template
+
+mixin services__item(popup, serviceTitle)
+  .services__item(data-popup= popup)
+    .services__pic(style="background-image:url(assets/img/bg-green.jpg)")
+      h3.services__title #{serviceTitle}
+    .services__icon
+      svg
+        use(xlink:href="assets/img/sprite.svg#pen")
+
+block variables
+  - var title = 'Послуги | Приватний нотаріус Гордієнко О.В.'
+  - var description = 'Приватний нотаріус Ольга Гордієнко надає повний перелік нотаріальних послуг та вчиняє будь-які нотаріальні дії, передбачені законодавством. Звернувшись до нотаріуса Ви можете отримати такі документи: довіреності, згоди батьків на виїзд дітей за кордон, згоди подружжя або співвласників на відчуження майна, заповіти, оформлення права власності на спадщину, нотаріально посвідчені договори (купівля-продаж, оренда, застава, іпотека, попередні договори та ін.), накладення та зняття заборони відчуження майна, виконавчі написи, посвідчення фактів, надання відомостей з єдиних та державних реєстрів.'
+  - var ogtitle     = 'Перелік нотаріальних послуг'
+  - var ogimage     = 'assets/img/social.jpg'
+
+
+block content
+  include ../sections/header
+  
+  //begin content
+  section.main.services
+    .container
+      header.top-header
+        .top-header__left
+          h2.top-header__title Послуги
+        .top-header__right
+          p.top-header__text Звернувшись до нотаріуса, Ви можете отримати такі документи: довіреності, згоди батьків на виїзд дітей за кордон, згоди подружжя або співвласників на відчуження майна, заповіти, оформлення права власності на спадщину, нотаріально посвідчені договори (купівля-продаж, оренда, іпотека, попередні договори та ін.), накладення та зняття заборони відчуження майна, виконавчі написи, посвідчення фактів, надання відомостей з єдиних та державних реєстрів.
+
+      section.services__list
+        +services__item('serv-01', 'Посвідчення довіреностей')
+        +services__item('serv-02', 'Посвідчення заповітів')
+        +services__item('serv-03', 'Відчуження та застава майна')
+        +services__item('serv-04', 'Реєстраційні послуги')
+        +services__item('serv-05', 'Згода батьків на виїзд дитини за кордон')
+        +services__item('serv-06', 'Засвідчення справжності підписів')
+        +services__item('serv-07', 'Засвідчення вірності копій та витягів')
+        +services__item('serv-08', 'Свідоцтва про право на спадщину')
+
+    include ../sections/footer
+    include ../elements/popup-sevrice
+
+  //end   content
+  include ../sections/scripts
