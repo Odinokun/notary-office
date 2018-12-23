@@ -1,0 +1,74 @@
+.new-year-hat {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: -35px;
+  width: 100px;
+  height: 70px;
+  pointer-events: none;
+  background-image: url('../img/new-year-hat.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @include max(1180) {
+    top: -20px;
+    left: -30px;
+    width: 80px;
+    height: 56px;
+  }
+  @include max(880) {
+    top: -13px;
+    left: -23px;
+    width: 65px;
+    height: 46px;
+  }
+  @include max(500) {
+    top: -11px;
+    left: -21px;
+    width: 55px;
+    height: 39px;
+  }
+  @include max(375) {
+    left: -17px;
+    width: 45px;
+    height: 32px;
+  }
+}
+.footer {
+  a {
+    z-index: 1;
+  }
+}
+.new-year-header {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  pointer-events: none;
+  background-image: url('../img/new-year-header.png');
+  background-repeat: repeat-x;
+  background-position: 0 5px;
+
+  @include max(1023) {
+    top: -30px;
+  }
+}
+.new-year-footer {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  pointer-events: none;
+  background-image: url('../img/new-year-footer.png');
+  background-repeat: repeat-x;
+  background-position: 0 5px;
+}
+.hero__title {
+  position: relative;
+  display: inline;
+}
