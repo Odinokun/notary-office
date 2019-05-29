@@ -9,10 +9,12 @@
   @include max(750) {
     display: block;
   }
+
   @include max(375) {
     top: 16px;
   }
 }
+
 .burger__menu {
   font-family: $font-title;
   font-size: 20px;
@@ -31,13 +33,16 @@
     letter-spacing: 1.3px;
   }
 }
+
 .burger input:checked + label .burger__menu {
   right: -150px;
   opacity: 0;
 }
+
 .burger input {
   display: none;
 }
+
 .burger label {
   position: relative;
   display: block;
@@ -51,6 +56,7 @@
     height: 33px;
   }
 }
+
 /* Exit Icon */
 .burger label:before,
 .burger input:checked + label:before {
@@ -68,9 +74,11 @@
     height: 2px;
   }
 }
+
 .burger label:before {
   animation: animationOneReverse 1s ease forwards;
 }
+
 @keyframes animationOneReverse {
   0% {
     transform: rotate(315deg);
@@ -83,9 +91,11 @@
     transform: rotate(0deg);
   }
 }
+
 .burger input:checked + label:before {
   animation: animationOne 1s ease forwards;
 }
+
 @keyframes animationOne {
   0%,
   50% {
@@ -98,6 +108,7 @@
     transform: rotate(315deg);
   }
 }
+
 .burger label:after,
 .burger input:checked + label:after {
   position: absolute;
@@ -114,9 +125,11 @@
     height: 2px;
   }
 }
+
 .burger label:after {
   animation: animationTwoReverse 1s ease forwards;
 }
+
 @keyframes animationTwoReverse {
   0% {
     transform: rotate(405deg);
@@ -129,9 +142,11 @@
     transform: rotate(0deg);
   }
 }
+
 .burger input:checked + label:after {
   animation: animationTwo 1s ease forwards;
 }
+
 @keyframes animationTwo {
   0%,
   50% {
@@ -144,6 +159,7 @@
     transform: rotate(405deg);
   }
 }
+
 /* Burger Icon */
 .burger label .burger__icon:before {
   position: absolute;
@@ -160,6 +176,7 @@
     height: 2px;
   }
 }
+
 @keyframes animationBurgerTopReverse {
   0%,
   50% {
@@ -175,9 +192,11 @@
     opacity: 1;
   }
 }
+
 .burger input:checked + label .burger__icon:before {
   animation: animationBurgerTop 1s ease forwards;
 }
+
 @keyframes animationBurgerTop {
   0% {
     transform: translateY(0px);
@@ -193,6 +212,7 @@
     opacity: 0;
   }
 }
+
 .burger label .burger__icon:after {
   position: absolute;
   bottom: 6px;
@@ -208,6 +228,7 @@
     height: 2px;
   }
 }
+
 @keyframes animationBurgerBottomReverse {
   0%,
   50% {
@@ -223,9 +244,11 @@
     opacity: 1;
   }
 }
+
 .burger input:checked + label .burger__icon:after {
   animation: animationBurgerBottom 1s ease forwards;
 }
+
 @keyframes animationBurgerBottom {
   0% {
     transform: translateY(0px);

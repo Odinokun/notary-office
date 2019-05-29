@@ -6,29 +6,29 @@ block variables
   - var ogtitle     = 'Нові правила гри для ТОВ'
   - var ogimage     = 'http://notary-office.kiev.ua/assets/img/article/article-2018-06.jpg'
 
-  mixin share-fb(shareLink, shareTitle, shareSiteName)
-    a.article-share__link.article-share__link--fb(href='https://www.facebook.com/sharer.php?u=' +
-    'http://notary-office.kiev.ua/' + shareLink + '&amp;t=' + shareTitle + '' , target='_blank')
-      svg
-        use(xlink:href="assets/img/sprite.svg#facebook")
+mixin share-fb(shareLink, shareTitle)
+  a.article-share__link.article-share__link--fb(href='https://www.facebook.com/sharer.php?u=' +
+  'http://notary-office.kiev.ua/' + shareLink + '&amp;t=' + shareTitle + '' , target='_blank' rel="nofollow noopener noreferrer")
+    svg
+      use(xlink:href="assets/img/sprite.svg#facebook")
 
-  mixin share-tw(shareLink, shareTitle, shareSiteName)
-    a.article-share__link.article-share__link--tw(href='https://twitter.com/share?url=' +
-    'http://notary-office.kiev.ua/' + shareLink + '&amp;text=' + shareTitle + '&amp;"', target='_blank') 
-      svg
-        use(xlink:href="assets/img/sprite.svg#twitter")
+mixin share-tw(shareLink, shareTitle)
+  a.article-share__link.article-share__link--tw(href='https://twitter.com/share?url=' +
+  'http://notary-office.kiev.ua/' + shareLink + '&amp;text=' + shareTitle + '', target='_blank' rel="nofollow noopener noreferrer")
+    svg
+      use(xlink:href="assets/img/sprite.svg#twitter")
 
-  mixin share-in(shareLink, shareTitle, shareSiteName)
-    a.article-share__link.article-share__link--in(href='http://www.linkedin.com/shareArticle?mini=true&url=' +
-    'http://notary-office.kiev.ua/' + shareLink + '&title=' + shareTitle + '&summary=&source=' + shareSiteName + '', target='_blank') 
-      svg
-        use(xlink:href="assets/img/sprite.svg#linkedin")
+mixin share-in(shareLink, shareTitle)
+  a.article-share__link.article-share__link--in(href='http://www.linkedin.com/shareArticle?mini=true&url=' +
+  'http://notary-office.kiev.ua/' + shareLink + '&title=' + shareTitle + '', target='_blank' rel="nofollow noopener noreferrer")
+    svg
+      use(xlink:href="assets/img/sprite.svg#linkedin")
 
 block content
   include ../sections/header
 
   //begin content
-  section.main.article
+  .main.article
     .container
       article.article__wrap
         img(src="assets/img/article/article-2018-06.jpg", alt="Нові правила гри для ТОВ").article__main-pic
@@ -37,7 +37,7 @@ block content
           h2.article__title Нові правила гри для товариств з обмеженою та додатковою відповідальністю
 
           span.article__autor
-            |автор -
+            | автор -
             =" "
             a(href="about.html") Гордієнко О.В.
 
@@ -57,14 +57,9 @@ block content
           a(href="blog.html").article__back-link
             svg
               use(xlink:href="assets/img/sprite.svg#back")
-            |Повернутися до блогу
+            | Повернутися до блогу
           .article-share
-            +share-fb('novi-pravyla-hry-dlia-tov.html', 'Нові правила гри для ТОВ', 'Сайт приватного нотаріуса Гордієнко О.В.')
-            +share-in('novi-pravyla-hry-dlia-tov.html', 'Нові правила гри для ТОВ', 'Сайт приватного нотаріуса Гордієнко О.В.')
-            +share-tw('novi-pravyla-hry-dlia-tov.html', 'Нові правила гри для ТОВ', 'Сайт приватного нотаріуса Гордієнко О.В.')
-
-
-
+            +share-fb('novi-pravyla-hry-dlia-tov.html', 'Нові_правила_гри_для_ТОВ')
 
   include ../sections/footer
   //end   content

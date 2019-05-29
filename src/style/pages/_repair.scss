@@ -10,13 +10,16 @@
   @include max(768) {
     font-size: 50px;
   }
+
   @include max(470) {
     font-size: 40px;
   }
+
   @include max(375) {
     font-size: 30px;
   }
 }
+
 .site-closed__subtitle {
   font-family: $font-title;
   font-size: 24px;

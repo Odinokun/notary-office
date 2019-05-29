@@ -12,6 +12,7 @@
   @include max(768) {
     padding-top: 50px;
   }
+
   &::before {
     position: absolute;
     top: 10px;
@@ -28,15 +29,18 @@
     padding-top: 0;
   }
 }
+
 .hero-banner {
   text-align: center;
 }
+
 .hero__title,
 .hero__subtitle {
   font-family: $font-hero;
   text-transform: lowercase;
   color: $text-light;
 }
+
 .hero__title {
   font-size: 80px;
   font-weight: 900;
@@ -47,18 +51,22 @@
   @include max(1180) {
     font-size: 60px;
   }
+
   @include max(880) {
     font-size: 50px;
     text-shadow: 2px 2px 0 #7caeac, 5px 5px 0 $shadow;
   }
+
   @include max(500) {
     font-size: 40px;
   }
+
   @include max(375) {
     font-size: 32px;
     text-shadow: 2px 2px 0 #7caeac, 4px 3px 0 $shadow;
   }
 }
+
 .hero__subtitle {
   font-size: 50px;
   font-weight: 900;
@@ -70,18 +78,22 @@
     font-size: 38px;
     letter-spacing: 7px;
   }
+
   @include max(880) {
     font-size: 34px;
     text-shadow: 1px 1px 0 #7caeac, 4px 4px 0 $shadow;
   }
+
   @include max(500) {
     font-size: 24px;
   }
+
   @include max(375) {
     font-size: 19px;
     text-shadow: 1px 1px 0 #7caeac, 2px 3px 0 $shadow;
   }
 }
+
 .ribbon {
   position: relative;
   display: inline-block;
@@ -94,6 +106,7 @@
   @include max(500) {
     padding: 15px 50px 38px 50px;
   }
+
   &::before,
   &::after {
     position: absolute;
@@ -116,6 +129,7 @@
     @include max(880) {
       left: -100px;
     }
+
     @include max(640) {
       display: none;
     }
@@ -126,11 +140,13 @@
     @include max(880) {
       right: -100px;
     }
+
     @include max(640) {
       display: none;
     }
   }
 }
+
 .ribbon__text {
   font-family: $font-title-2;
   font-size: 16px;
@@ -140,18 +156,22 @@
   @include max(880) {
     font-size: 14px;
   }
+
   @include max(500) {
     font-size: 12px;
     margin-top: 8px;
   }
+
   @include max(375) {
-    margin-top: 9px;
     font-size: 10px;
+    margin-top: 9px;
   }
 }
+
 .hero__phone {
   text-align: center;
 }
+
 .hero__phone-link {
   font-family: $font-title;
   font-size: 22px;
@@ -167,6 +187,7 @@
     font-size: 20px;
     margin-top: -20px;
   }
+
   &:hover {
     animation: none;
     text-shadow: none;
@@ -179,6 +200,7 @@
     }
   }
 }
+
 @keyframes shakeHeroPhone {
   1% {
     transform: rotateZ(3deg);

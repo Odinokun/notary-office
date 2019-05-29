@@ -14,6 +14,7 @@
     margin-bottom: 60px;
   }
 }
+
 .blog__article-shadow {
   position: absolute;
   top: 0;
@@ -23,6 +24,7 @@
   pointer-events: none;
   box-shadow: inset 0 -150px 150px -50px #b8b582;
 }
+
 .blog__article-pic-wrap {
   float: left;
   width: 150px;
@@ -39,6 +41,7 @@
     display: none;
   }
 }
+
 .blog__article-pic {
   width: 100%;
   height: 100%;
@@ -65,7 +68,7 @@
   }
 }
 
-.blog__article-title {
+.blog__article-link {
   font-family: $font-title;
   font-size: 22px;
   line-height: 1.2;

@@ -3,24 +3,29 @@
 *::after {
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
 html {
   font-family: $font;
   font-size: 16px;
   line-height: 1.38;
   color: $text;
 }
+
 body {
   min-width: 320px;
 }
+
 body.no-scroll {
   overflow: hidden;
 }
+
 body.fix {
   position: fixed;
   top: 0;
@@ -28,6 +33,7 @@ body.fix {
   bottom: 0;
   left: 0;
 }
+
 h1,
 h2,
 h3,
@@ -38,33 +44,41 @@ p {
   font-weight: 400;
   margin: 0 0 10px 0;
 }
+
 h1 {
   font-family: $font-bold;
   font-size: 36px;
 }
+
 h2 {
   font-family: $font-bold;
   font-size: 32px;
 }
+
 h3 {
   font-family: $font-bold;
   font-size: 28px;
 }
+
 h4 {
   font-family: $font-bold;
   font-size: 24px;
 }
+
 h5 {
   font-family: $font-bold;
   font-size: 22px;
 }
+
 h6 {
   font-family: $font-bold;
   font-size: 20px;
 }
+
 p {
   font-size: 16px;
 }
+
 a {
   transition: color .5s;
   color: $link;
@@ -73,18 +87,21 @@ a {
     color: $link-hover;
   }
 }
+
 ol,
 ul {
   li {
     padding: 3px 0;
   }
 }
+
 input,
 textarea,
 select,
 button {
   outline: none;
 }
+
 input {
   padding: 3px 10px 5px 10px;
   color: $text;
@@ -93,15 +110,19 @@ input {
     @include placeholder-color($text);
   }
 }
+
 textarea {
   resize: none;
 }
+
 //изменяем цвет выделения текста мышью
 ::selection {
   background-color: $brand;
 }
+
 .main {
   position: relative;
+
   // overflow-x: hidden;
   min-height: 100vh;
   padding-top: 130px;
@@ -110,6 +131,7 @@ textarea {
     padding-top: 30px;
   }
 }
+
 .container {
   position: relative;
   width: 100%;
@@ -121,6 +143,7 @@ textarea {
     padding: 10px 20px;
   }
 }
+
 .custom-ol__title,
 .custom-ul__title {
   font-family: $font-title;
@@ -128,10 +151,12 @@ textarea {
   line-height: 1.2;
   text-transform: uppercase;
 }
+
 .custom-ul {
   margin: 0;
   padding: 0;
 }
+
 .custom-ul__li {
   display: flex;
   margin-bottom: 10px;
@@ -145,6 +170,7 @@ textarea {
     transition: fill .5s;
   }
 }
+
 .custom-ol {
   margin: 0;
   padding: 0;
@@ -152,6 +178,7 @@ textarea {
 
   @include counter(li);
 }
+
 .custom-ol__li {
   display: flex;
   margin-bottom: 10px;

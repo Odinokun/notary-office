@@ -6,41 +6,41 @@ block variables
   - var ogtitle     = 'Зміни щодо правил оцінки вартості майна для правочинів'
   - var ogimage     = 'http://notary-office.kiev.ua/assets/img/article/article-2018-07.jpg'
 
-  mixin share-fb(shareLink, shareTitle, shareSiteName)
-    a.article-share__link.article-share__link--fb(href='https://www.facebook.com/sharer.php?u=' +
-    'http://notary-office.kiev.ua/' + shareLink + '&amp;t=' + shareTitle + '' , target='_blank')
-      svg
-        use(xlink:href="assets/img/sprite.svg#facebook")
+mixin share-fb(shareLink, shareTitle)
+  a.article-share__link.article-share__link--fb(href='https://www.facebook.com/sharer.php?u=' +
+  'http://notary-office.kiev.ua/' + shareLink + '&amp;t=' + shareTitle + '' , target='_blank' rel="nofollow noopener noreferrer")
+    svg
+      use(xlink:href="assets/img/sprite.svg#facebook")
 
-  mixin share-tw(shareLink, shareTitle, shareSiteName)
-    a.article-share__link.article-share__link--tw(href='https://twitter.com/share?url=' +
-    'http://notary-office.kiev.ua/' + shareLink + '&amp;text=' + shareTitle + '&amp;"', target='_blank') 
-      svg
-        use(xlink:href="assets/img/sprite.svg#twitter")
+mixin share-tw(shareLink, shareTitle)
+  a.article-share__link.article-share__link--tw(href='https://twitter.com/share?url=' +
+  'http://notary-office.kiev.ua/' + shareLink + '&amp;text=' + shareTitle + '', target='_blank' rel="nofollow noopener noreferrer")
+    svg
+      use(xlink:href="assets/img/sprite.svg#twitter")
 
-  mixin share-in(shareLink, shareTitle, shareSiteName)
-    a.article-share__link.article-share__link--in(href='http://www.linkedin.com/shareArticle?mini=true&url=' +
-    'http://notary-office.kiev.ua/' + shareLink + '&title=' + shareTitle + '&summary=&source=' + shareSiteName + '', target='_blank') 
-      svg
-        use(xlink:href="assets/img/sprite.svg#linkedin")
+mixin share-in(shareLink, shareTitle)
+  a.article-share__link.article-share__link--in(href='http://www.linkedin.com/shareArticle?mini=true&url=' +
+  'http://notary-office.kiev.ua/' + shareLink + '&title=' + shareTitle + '', target='_blank' rel="nofollow noopener noreferrer")
+    svg
+      use(xlink:href="assets/img/sprite.svg#linkedin")
 
 block content
   include ../sections/header
 
   //begin content
-  section.main.article
+  .main.article
     .container
       article.article__wrap
         img(src="assets/img/article/article-2018-07.jpg", alt="Зміни щодо правил оцінки вартості майна для правочинів").article__main-pic
 
         header.article__header
           h2.article__title
-            |Зміни щодо правил оцінки
+            | Зміни щодо правил оцінки
             br
-            |вартості майна для правочинів
+            | вартості майна для правочинів
 
           span.article__autor
-            |автор -
+            | автор -
             =" "
             a(href="about.html") Гордієнко О.В.
 
@@ -60,11 +60,11 @@ block content
           a(href="blog.html").article__back-link
             svg
               use(xlink:href="assets/img/sprite.svg#back")
-            |Повернутися до блогу
+            | Повернутися до блогу
           .article-share
-            +share-fb('zminyshchodo-pravyl-otsinky-vartosti-maina-dlia-pravochyniv.html', 'Зміни щодо правил оцінки вартості майна для правочинів', 'Сайт приватного нотаріуса Гордієнко О.В.')
-            +share-in('zminyshchodo-pravyl-otsinky-vartosti-maina-dlia-pravochyniv.html', 'Зміни щодо правил оцінки вартості майна для правочинів', 'Сайт приватного нотаріуса Гордієнко О.В.')
-            +share-tw('zminyshchodo-pravyl-otsinky-vartosti-maina-dlia-pravochyniv.html', 'Зміни щодо правил оцінки вартості майна для правочинів', 'Сайт приватного нотаріуса Гордієнко О.В.')
+            +share-fb('zminyshchodo-pravyl-otsinky-vartosti-maina-dlia-pravochyniv.html', 'Зміни_щодо_правил_оцінки_вартості_майна_для_правочинів')
+            +share-in('zminyshchodo-pravyl-otsinky-vartosti-maina-dlia-pravochyniv.html', 'Зміни_щодо_правил_оцінки_вартості_майна_для_правочинів')
+            +share-tw('zminyshchodo-pravyl-otsinky-vartosti-maina-dlia-pravochyniv.html', 'Зміни_щодо_правил_оцінки_вартості_майна_для_правочинів')
 
   include ../sections/footer
   //end   content

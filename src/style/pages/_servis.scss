@@ -14,10 +14,12 @@
     border: 2px dashed #948c70;
   }
 }
+
 .servis-header {
   margin-bottom: 40px;
   padding-top: 60px;
 }
+
 .servis-header__title {
   font-family: $font-title;
   font-size: 50px;
@@ -29,9 +31,11 @@
     font-size: 36px;
   }
 }
+
 .servis-type {
   margin-bottom: 30px;
 }
+
 .servis-header__subtitle {
   font-family: $font-title;
   font-size: 30px;
@@ -44,6 +48,7 @@
     font-size: 24px;
   }
 }
+
 .servis {
   p {
     display: inline-block;

@@ -21,6 +21,7 @@
       padding-bottom: 0;
     }
   }
+
   &.active {
     height: 100vh;
 
@@ -29,6 +30,7 @@
         height: 100vh;
       }
     }
+
     .menu__list {
       padding-top: 70px;
     }
@@ -38,12 +40,14 @@
     }
   }
 }
+
 .sticky-header.scrolling {
   height: 100px;
 
   @include max(1023) {
     height: 60px;
   }
+
   &.active {
     height: 100vh;
 
@@ -54,9 +58,11 @@
     }
   }
 }
+
 .sticky-header.hide {
   top: -170px;
 }
+
 .header__phone {
   font-family: $font-title;
   font-size: 20px;
@@ -72,9 +78,11 @@
   @include max(750) {
     display: flex;
   }
+
   @include max(375) {
     font-size: 16px;
   }
+
   &:hover {
     .header__phone-icon {
       display: inline-block;
@@ -83,6 +91,7 @@
     }
   }
 }
+
 @keyframes shakeHeaderPhone {
   33% {
     transform: rotateZ(5deg);
@@ -94,6 +103,7 @@
     transform: rotateZ(5deg);
   }
 }
+
 .header__phone-icon {
   fill: $text-light;
   width: 40px;
@@ -106,6 +116,7 @@
     height: 35px;
   }
 }
+
 .menu__list {
   display: flex;
   justify-content: space-between;
@@ -118,6 +129,7 @@
     margin: 0;
     margin: -3px 0 0 0;
   }
+
   @include max(750) {
     overflow: hidden;
     flex-direction: column;
@@ -129,6 +141,7 @@
     transition-property: height;
   }
 }
+
 .menu__item {
   margin-bottom: -30px;
   list-style: none;
@@ -136,12 +149,14 @@
   @include max(1023) {
     line-height: 60px;
   }
+
   @include max(750) {
     margin-bottom: -20px;
     transition: .3s;
     opacity: 0;
   }
 }
+
 .menu__link {
   font-family: $font-title;
   font-size: 34px;
@@ -155,14 +170,17 @@
   @include max(1180) {
     font-size: 28px;
   }
+
   @include max(880) {
     font-size: 24px;
   }
+
   &:hover {
     color: $text-light;
     text-shadow: 1px .5px 1px $shadow;
   }
 }
+
 .menu__item--main {
   position: relative;
   margin: 0 -20px -45px -20px;
@@ -174,6 +192,7 @@
   @include max(1023) {
     display: none;
   }
+
   @include max(750) {
     display: block;
     margin: 0 0 -10px 0;
@@ -183,6 +202,7 @@
 
     order: -1;
   }
+
   &::before {
     position: absolute;
     z-index: -11;

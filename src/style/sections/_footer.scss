@@ -15,10 +15,12 @@
     bottom: 0;
   }
 }
+
 .hero .footer {
   background-color: #81b3b2;
   background-image: url('../img/bg-green.jpg');
 }
+
 .about .footer,
 .servis .footer,
 .article .footer,
@@ -26,19 +28,23 @@
   background-color: #d5d0bd;
   background-image: url('../img/bg-bezh.jpg');
 }
+
 .blog .footer {
   background-color: #b1ae7b;
   background-image: url('../img/bg-olive.jpg');
 }
+
 .links .footer {
   background-color: #cdcdcd;
   background-image: url('../img/bg-gray.jpg');
 }
+
 .contacts .footer {
   background-color: #3d3d3d;
   background-image: url('../img/bg-black.jpg');
   box-shadow: 0 1px 10px 0 $highlight;
 }
+
 .copyright__link,
 .copyright {
   font-family: $font-title-2;

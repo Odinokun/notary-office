@@ -35,11 +35,13 @@
     height: 32px;
   }
 }
+
 .footer {
   a {
     z-index: 1;
   }
 }
+
 .new-year-header {
   position: absolute;
   z-index: 1;
@@ -56,6 +58,7 @@
     top: -30px;
   }
 }
+
 .new-year-footer {
   position: absolute;
   z-index: 0;
@@ -68,6 +71,7 @@
   background-repeat: repeat-x;
   background-position: 0 5px;
 }
+
 .hero__title {
   position: relative;
   display: inline;
