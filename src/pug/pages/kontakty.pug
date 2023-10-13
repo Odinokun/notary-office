@@ -28,20 +28,25 @@ block content
             span.contacts__connect
               svg
                 use(xlink:href="assets/img/sprite.svg#phone")
-              a(href="tel:+380962374233") 096-237-42-33
+              //-a(href="tel:+380962374233") 096-237-42-33
+              a(href="tel:+380960000000") 096-000-00-00
             span.contacts__connect
               svg
                 use(xlink:href="assets/img/sprite.svg#mail")
-              a(href="mailto:olcha@ukr.net") olcha@ukr.net
+              //-a(href="mailto:olcha@ukr.net") olcha@ukr.net
+              a(href="mailto:test@ukr.net") test@ukr.net
             span.contacts__connect.contacts__connect--adress
               svg
                 use(xlink:href="assets/img/sprite.svg#adress")
               a(href="https://goo.gl/maps/STVeKT6GGv52" target="_blank" rel="nofollow noopener noreferrer")
-                |м.Київ, Дарницький б-р, 8-В, оф.182,
+                //-|м.Київ, Дарницький б-р, 8-В, оф.182,
+                |м.Київ, Test б-р, 000-В, оф.000,
                 br
-                span код домофону 182
+                //-span код домофону 182
+                span код домофону 000
                 br
-                |(10 хвилин пішки від м.Дарниця)
+                //-|(10 хвилин пішки від м.Дарниця)
+                |(10 хвилин пішки від м.Test)
 
 
           .contacts__schedule-wrap
@@ -75,15 +80,15 @@ block content
               span.contacts__form-note * поля які обов'язкові для заповнення.
               button.btn Відправити
 
-        .contacts__map#contacts__map
+        //-.contacts__map#contacts__map
 
 
     include ../sections/footer
     include ../elements/popup-contacts
   //end   content
   include ../sections/scripts
-  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAui_laVNWis8vf1aqwgF8yfMLtxL_jL8o&callback=initMap" async defer)
-  script.
+  //-script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAui_laVNWis8vf1aqwgF8yfMLtxL_jL8o&callback=initMap" async defer)
+  //-script.
     // begin contacts-map
     var map;
 
