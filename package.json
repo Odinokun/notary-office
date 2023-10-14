@@ -1,12 +1,12 @@
 {
   "name": "quick-start-tpl",
-  "homepage": "http://Odinokun.github.io/notary-office",
+  "homepage": "https://Odinokun.github.io/notary-office",
   "version": "1.0.0",
   "description": "my frontend quick start template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run gulp",
     "deploy": "gh-pages -d build"
   },
   "repository": {
